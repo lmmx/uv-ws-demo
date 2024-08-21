@@ -32,5 +32,7 @@ Hello uv from workspaces!
 
 ```sh
 $ two_plus_two
-4
+**4**
 ```
+
+The workspace package `tpt` depends on another workspace package `bolded` which makes the text bold
