@@ -27,12 +27,10 @@ $ greet uv
 Hello uv from workspaces!
 ```
 
-3. Run the CLI entrypoint `two_plus_two` which gives 4, using the workspace package `tpt` (from
-   `packages/tpt`)
+3. Run the CLI entrypoint `two_plus_two` which uses the workspace package `tpt` (`packages/tpt`),
+   which in turn depends on workspace package `bolded` (`packages/bolded`) to make the text **bold**.
 
 ```sh
 $ two_plus_two
 **4**
 ```
-
-The workspace package `tpt` depends on another workspace package `bolded` which makes the text **bold**
