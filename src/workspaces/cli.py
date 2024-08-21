@@ -1,6 +1,7 @@
 from sys import argv
 
 from pydantic import BaseModel
+from two_plus_two import two_plus_two
 
 
 class Greeting(BaseModel):
@@ -14,3 +15,7 @@ def pop_argv_with_default(default: str) -> str:
 def greet() -> str:
     greeting = Greeting(audience=pop_argv_with_default(default="world"))
     return f"Hello {greeting.audience} from workspaces!"
+
+
+def add_two_plus_two() -> str:
+    return f"Two plus two is {two_plus_two()}"

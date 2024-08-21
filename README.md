@@ -6,6 +6,12 @@ A simple demo of the new [workspaces][ws] feature in `uv` 0.3.0.
 
 ## Usage
 
+0. (Optional) Create a conda environment to encapsulate the package installation
+
+```sh
+conda create -n uvwsdemo python=3.10 -y && conda activate uvwsdemo
+```
+
 1. Install the workspace top level package
 
 - It has one dependency, Pydantic

@@ -6,11 +6,19 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "pydantic>=2.8.2",
+    "tpt",
 ]
 
 [project.scripts]
 greet = "workspaces.cli:greet"
+two_plus_two = "workspaces.cli:add_two_plus_two"
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[tool.uv.workspace]
+members = ["packages/tpt"]
+
+[tool.uv.sources]
+tpt = { workspace = true }
