@@ -1,7 +1,7 @@
 from sys import argv
 
 from pydantic import BaseModel
-from two_plus_two import two_plus_two
+from tpt import two_plus_two
 
 
 class Greeting(BaseModel):
