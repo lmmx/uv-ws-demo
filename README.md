@@ -28,3 +28,11 @@ Hello world from workspaces!
 $ greet uv
 Hello uv from workspaces!
 ```
+
+3. Run the CLI entrypoint `two_plus_two` which adds 2+2 = 4, using the workspace package `tpt` (from
+   `packages/tpt`)
+
+```sh
+$ two_plus_two
+4
+```
