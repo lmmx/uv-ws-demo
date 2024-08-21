@@ -35,4 +35,4 @@ $ two_plus_two
 **4**
 ```
 
-The workspace package `tpt` depends on another workspace package `bolded` which makes the text bold
+The workspace package `tpt` depends on another workspace package `bolded` which makes the text **bold**
