@@ -27,7 +27,7 @@ $ greet uv
 Hello uv from workspaces!
 ```
 
-3. Run the CLI entrypoint `two_plus_two` which adds 2+2 = 4, using the workspace package `tpt` (from
+3. Run the CLI entrypoint `two_plus_two` which gives 4, using the workspace package `tpt` (from
    `packages/tpt`)
 
 ```sh
