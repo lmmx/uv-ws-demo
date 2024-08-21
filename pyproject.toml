@@ -1,0 +1,16 @@
+[project]
+name = "workspaces"
+version = "0.1.0"
+description = "A simple demo of the new workspaces feature in uv 0.3.0"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic>=2.8.2",
+]
+
+[project.scripts]
+greet = "workspaces.cli:greet"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
