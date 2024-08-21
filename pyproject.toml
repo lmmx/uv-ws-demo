@@ -18,7 +18,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.uv.workspace]
-members = ["packages/tpt"]
+members = ["packages/tpt", "packages/bolded"]
 
 [tool.uv.sources]
 tpt = { workspace = true }

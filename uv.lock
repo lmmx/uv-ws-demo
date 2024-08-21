@@ -7,6 +7,7 @@ resolution-markers = [
 
 [manifest]
 members = [
+    "bolded",
     "tpt",
     "workspaces",
 ]
@@ -19,6 +20,11 @@ sdist = { url = "https://files.pythonhosted.org/packages/ee/67/531ea369ba64dcff5
 wheels = [
     { url = "https://files.pythonhosted.org/packages/78/b6/6307fbef88d9b5ee7421e68d78a9f162e0da4900bc5f5793f6d3d0e34fb8/annotated_types-0.7.0-py3-none-any.whl", hash = "sha256:1f02e8b43a8fbbc3f3e0d4f0f4bfc8131bcb4eebe8849b8e5c773f3a1c582a53", size = 13643 },
 ]
+
+[[package]]
+name = "bolded"
+version = "0.1.0"
+source = { editable = "packages/bolded" }
 
 [[package]]
 name = "pydantic"
@@ -106,11 +112,15 @@ name = "tpt"
 version = "0.1.0"
 source = { editable = "packages/tpt" }
 dependencies = [
+    { name = "bolded" },
     { name = "word2number" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "word2number", specifier = ">=1.1" }]
+requires-dist = [
+    { name = "bolded", editable = "packages/bolded" },
+    { name = "word2number", specifier = ">=1.1" },
+]
 
 [[package]]
 name = "typing-extensions"

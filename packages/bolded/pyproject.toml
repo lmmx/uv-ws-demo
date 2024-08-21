@@ -1,0 +1,11 @@
+[project]
+name = "bolded"
+version = "0.1.0"
+description = "Make text bold with markdown asterisks"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
